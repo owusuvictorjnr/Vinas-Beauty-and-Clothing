@@ -361,7 +361,7 @@ const Navbar = () => {
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button
-                    variant="outline"
+                    variant="outline-none"
                     size="icon"
                     className="rounded-full"
                   >
