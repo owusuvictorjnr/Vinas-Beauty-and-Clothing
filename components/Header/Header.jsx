@@ -1,6 +1,6 @@
 "use client ";
 
-import React, { useState } from "react";
+import React from "react";
 import { CircleUser, Menu, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -23,6 +23,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { FaFacebookF, FaYoutube, FaTiktok, FaInstagram } from "react-icons/fa";
 import { PiShoppingCartSimpleThin } from "react-icons/pi";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
@@ -87,12 +88,21 @@ const Navbar = () => {
         <div className="flex w-full flex-col">
           <header className="sticky  top-0 flex  h-16 items-center justify-between gap-4 border-b bg-background px-4 md:px-6">
             <div className="hidden md:block">
-              <Link
-                href="/"
-                className=" capitalize text-sm font-bold text-orange-500"
-              >
-                vinas beauty and clothing
-              </Link>
+              <div className="flex items-center gap-2">
+                <Image
+                  src="/assets/logo/android-chrome-192x192.png"
+                  alt="logo"
+                  width={100}
+                  height={1000}
+                  className="h-10 w-15"
+                />
+                <Link
+                  href="/"
+                  className=" capitalize text-sm font-bold text-orange-500"
+                >
+                  vinas beauty and clothing
+                </Link>
+              </div>
             </div>
             <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6 lg:sticky lg:top-0">
               <ul className="flex space-x-10 capitalize text-foreground">
@@ -234,16 +244,16 @@ const Navbar = () => {
                   </HoverCard>
                 </li> */}
 
-                <li className="">
+                <li className="/">
                   <HoverCard>
                     <HoverCardTrigger>
-                      <Link href="" className="hover:text-blue-500">
+                      <Link href="/" className="hover:text-blue-500">
                         blog
                       </Link>
                     </HoverCardTrigger>
                     <HoverCardContent>
                       <Link
-                        href="#"
+                        href="/"
                         className="text- transition-colors hover:text-foreground"
                       >
                         home
