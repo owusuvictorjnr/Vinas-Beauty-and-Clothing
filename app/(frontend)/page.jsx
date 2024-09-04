@@ -1,3 +1,4 @@
+import BestSelling from "@/components/BestSell/BestSelling";
 import Hero from "@/components/Hero/Hero";
 import OfficialWare from "@/components/OfficalWare/OfficialWare";
 
@@ -11,7 +12,14 @@ export default function Home() {
         </section>
 
         {/* Official ware */}
-        <OfficialWare />
+        <section>
+          <OfficialWare />
+        </section>
+        
+        {/* Best Selling */}
+        <section>
+          <BestSelling />
+        </section>
       </section>
     </main>
   );
