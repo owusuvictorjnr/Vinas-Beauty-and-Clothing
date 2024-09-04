@@ -47,14 +47,14 @@ export default function Hero({ deviceType }) {
         {data.carousel.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col mx-auto md:flex-row items-center justify-center min-h-full w-full px-5"
+            className="flex flex-col space-y-10 mx-auto md:flex-row items-center justify-center min-h-full w-full px-5"
           >
             {/* Image Section */}
             <div className="w-full lg:w-1/2 flex items-center justify-center mx-auto h-[50vh] lg:order-1">
               <Image
                 src={item.image}
                 alt={item.name}
-                layout="responsive"
+                // layout="responsive"
                 height={500}
                 width={1000}
                 className="object-cover mx-auto h-[50vh] w-full rounded-md"
@@ -62,17 +62,19 @@ export default function Hero({ deviceType }) {
             </div>
 
             {/* Text Section */}
-            <div className="w-full lg:w-1/2 h-full flex justify-center lg:p-12 text-center lg:text-left">
+            <div className="w-full space-y-10 lg:w-1/2 h-full flex flex-col justify-center lg:p-12 text-center lg:text-left">
               <div>
                 <h2 className="text-3xl lg:text-5xl font-bold mb-4">
                   {item.name}
                 </h2>
                 <p className="text-lg lg:text-2xl">{item.description}</p>
               </div>
+              <div className="">
+                <Button className="hover:bg-rose-400 hover:duration-150 capitalize">
+                  shop now
+                </Button>
+              </div>
             </div>
-            <Button className="hover:bg-rose-400 hover:duration-150 capitalize">
-              shop now
-            </Button>
           </div>
         ))}
       </Carousel>
