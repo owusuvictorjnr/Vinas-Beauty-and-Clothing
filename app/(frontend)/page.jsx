@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero/Hero";
+import OfficialWare from "@/components/OfficalWare/OfficialWare";
 
 export default function Home() {
   return (
@@ -6,9 +7,11 @@ export default function Home() {
       <section>
         <section>
           {/* Hero Banner */}
-
           <Hero />
         </section>
+
+        {/* Official ware */}
+        <OfficialWare />
       </section>
     </main>
   );
