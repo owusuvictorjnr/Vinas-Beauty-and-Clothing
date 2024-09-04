@@ -60,5 +60,37 @@ const data = {
       banner: "/assets/pic5.jpg",
     },
   ],
+
+  officiaWare: [
+    {
+      name: "beads 3",
+      slug: "beads-3",
+      category: "beads",
+      image: "/assets/img/beads-3.jpeg",
+      price: 50,
+      brand: "African beads",
+      countInStock: 0,
+      rating: 4.5,
+      description: "suits & formalwear",
+      numReviews: 10,
+      isFeatured: true,
+      banner: "/assets/pic5.jpg",
+    },
+
+    {
+      name: "beads 1",
+      slug: "beads-1",
+      category: "beads",
+      image: "/assets/img/beads-2.jpeg",
+      price: 50,
+      brand: "African beads",
+      countInStock: 0,
+      rating: 4.5,
+      description: "tops and gowns",
+      numReviews: 10,
+      isFeatured: true,
+      banner: "/assets/pic5.jpg",
+    },
+  ],
 };
 export default data;
