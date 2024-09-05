@@ -67,3 +67,29 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* global.css */
+.slider-container {
+  width: 100%;
+  overflow: hidden; /* Hide the overflow */
+}
+
+.slider-content {
+  display: flex;
+  justify-content: space-between;
+  animation: slide 30s linear infinite; /* Smooth infinite scrolling */
+}
+
+.slider-text {
+  white-space: nowrap;
+  padding: 0 2rem;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%); /* Start at the right end */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left end */
+  }
+}
