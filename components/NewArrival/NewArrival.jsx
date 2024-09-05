@@ -16,7 +16,7 @@ export default function NewArrival() {
   return (
     <div className="min-h-[30vh] container mb-10 mx-auto mt-[10rem]">
       <h1 className="text-2xl text-black font-semibold capitalize">
-        featured collection
+       new arrival
       </h1>
       <div className="lg:flex lg:justify-between container mx-auto">
         <div className="mt-10 flex mx-auto justify-center lg:mt-0">
