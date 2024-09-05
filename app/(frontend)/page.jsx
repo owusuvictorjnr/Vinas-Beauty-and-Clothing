@@ -1,6 +1,8 @@
 import BestSelling from "@/components/BestSell/BestSelling";
 import PromoCountdown from "@/components/Countdown/Countdown";
+import FeaturedCollection from "@/components/FeaturedCollection/FeaturedCollection";
 import Hero from "@/components/Hero/Hero";
+import NewArrival from "@/components/NewArrival/NewArrival";
 import OfficialWare from "@/components/OfficalWare/OfficialWare";
 
 export default function Home() {
@@ -27,6 +29,14 @@ export default function Home() {
         {/* Promo countdown */}
         <section>
           <PromoCountdown targetDate={promoEndDate} />
+        </section>
+
+        <section>
+          <FeaturedCollection />
+        </section>
+
+        <section>
+          <NewArrival />
         </section>
       </section>
     </main>
